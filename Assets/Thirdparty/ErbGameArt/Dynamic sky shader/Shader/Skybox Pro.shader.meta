@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: d551ad4eab81359429d1d7a681389348
+timeCreated: 1534236235
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _Skycubemap: {fileID: 8900000, guid: bcc1693131975034d973c9ca0d96eb40, type: 2}
+  - _Skycubemap2: {fileID: 8900000, guid: ff2134fa7e237b747b8bebdca1c3164e, type: 2}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

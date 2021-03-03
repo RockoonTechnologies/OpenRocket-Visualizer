@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Skybox
+  m_Shader: {fileID: 4800000, guid: d551ad4eab81359429d1d7a681389348, type: 3}
+  m_ShaderKeywords: _USESECONDCUBEMAP_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Skycubemap:
+        m_Texture: {fileID: 8900000, guid: 019ac02d3a0eaf940bc821a947138ded, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Skycubemap2:
+        m_Texture: {fileID: 8900000, guid: 39aec5af35744c248b07b84004caeeee, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Stars:
+        m_Texture: {fileID: 2800000, guid: 32bb0e50a91fab24d878379b00197946, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_1799:
+        m_Texture: {fileID: 8900000, guid: 32bb0e50a91fab24d878379b00197946, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Daytime: 1
+    - _Nightskyintensity: -1.5
+    - _Skyintensity: -0.2
+    - _SunIntensity: 2
+    - _SunRadiusA: 0.0434
+    - _SunRadiusB: 0
+    - _Usesecondcubemap: 1
+    - _Useskycubemap: 0
+    m_Colors:
+    - _HorizonColor: {r: 0.6140263, g: 0.8071117, b: 0.9245283, a: 1}
+    - _SkyColor: {r: 0.43915984, g: 0.7288417, b: 0.9056604, a: 1}
+    - _Suncolor: {r: 1, g: 0.49797162, b: 0.27205884, a: 1}
+    - _Sunsetcolor: {r: 1, g: 0.56, b: 0.24264705, a: 1}
+  m_BuildTextureStacks: []

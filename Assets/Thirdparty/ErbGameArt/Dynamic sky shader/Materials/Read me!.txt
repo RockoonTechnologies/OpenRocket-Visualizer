@@ -1,0 +1,8 @@
+To add your sky to the shader - make a cubemap from it!
+If your sky consists of 6 textures, use my prepaared cubemaps or create a Cubemap in the explorer and add it to the material: Create> Legacy> Cubemap
+
+> (Use sky cubemap?) The first switch turns off both the cubemaps!
+
+P.S. With the Cubmap, a bug can occur - the textures do not look rounded, but square.
+In that case, try restarting the Unity or recreate the cubemap.
+I once had such a bug, I solved it by the banal creation of a cylindrical cube from my texture.
