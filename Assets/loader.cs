@@ -53,6 +53,7 @@ public class loader : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         status.text = "Loading Assets, Scene";
+        
         SceneManager.LoadScene("SampleScene");
     }
 }

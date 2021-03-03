@@ -2,7 +2,10 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
- using System.IO;
+using System.IO;
+using Mapbox.Unity.Map;
+using Mapbox.Map;
+using Mapbox.Utils;
 
 public class csvRunner : MonoBehaviour {
  
@@ -11,6 +14,8 @@ public class csvRunner : MonoBehaviour {
 	public ParticleSystem flameys;
 	public Transform light;
 	Rigidbody rb;
+
+	public GameObject loading;
 	
 
 
@@ -27,8 +32,14 @@ public class csvRunner : MonoBehaviour {
 	float dt;
 	string contents;
 
+
+	public Mapbox.Unity.Map.AbstractMap map;
+
 	void Start () {
 		
+		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Awake();
+		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Reload(1);
+
 		dt = PlayerPrefs.GetFloat("dt");
 		string path = PlayerPrefs.GetString("path");
 		contents = File.ReadAllText(path);
@@ -36,6 +47,15 @@ public class csvRunner : MonoBehaviour {
 		if(time == 1) {
 			light.eulerAngles = new Vector3(-90f, 0, 0);
 		}
+
+
+		float lat = PlayerPrefs.GetFloat("lat");
+		float longi = PlayerPrefs.GetFloat("long");
+
+		
+		Vector2d corods = new Vector2d(lat, longi);
+		map.UpdateMap(corods, 15f);
+
 		//CSVReader.DebugOutputGrid( CSVReader.SplitCsvGrid(csv.text) );
 		string[,] array = CSVReader.SplitCsvGrid(contents);
 		ori = GetComponent<orientation>();
@@ -43,6 +63,7 @@ public class csvRunner : MonoBehaviour {
 		rb = rocket.gameObject.GetComponent<Rigidbody>();
 
 		timeScale.value = 0.7f;
+		
 		coro = StartCoroutine(Run(array, 1));
 		
 	}
@@ -91,6 +112,7 @@ public class csvRunner : MonoBehaviour {
 	   float oldHeight = 0;
 	   //flameys.Play();
        for(int x = start; x < data.GetLength(1)-5; x++) {
+		   loading.SetActive(false);
 		   while(paused) {
 			   yield return null;
 			  
