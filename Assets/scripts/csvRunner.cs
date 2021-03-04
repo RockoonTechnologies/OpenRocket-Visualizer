@@ -35,11 +35,18 @@ public class csvRunner : MonoBehaviour {
 
 	public Mapbox.Unity.Map.AbstractMap map;
 
+	void Awake() {
+		map = GameObject.Find("Map").GetComponent<Mapbox.Unity.Map.AbstractMap>();
+		map._initializeOnStart = true;
+	}
+
 	void Start () {
 		
 		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Awake();
 		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Reload(1);
 		gameObject.GetComponent<rocketSpawner>().LOAD();
+
+		
 
 		dt = PlayerPrefs.GetFloat("dt");
 		string path = PlayerPrefs.GetString("path");
@@ -51,11 +58,14 @@ public class csvRunner : MonoBehaviour {
 
 
 		float lat = PlayerPrefs.GetFloat("lat");
-		float longi = PlayerPrefs.GetFloat("long");
+		float longi = PlayerPrefs.GetFloat("long"); 
 
 		
-		Vector2d corods = new Vector2d(lat, longi);
-		map.UpdateMap(corods, 15f);
+		Vector2d coords = new Vector2d(lat, longi);
+		print("lat: " + lat.ToString());
+		print("longi: " + longi.ToString());
+		
+		map.UpdateMap(coords, 15f);
 
 		//CSVReader.DebugOutputGrid( CSVReader.SplitCsvGrid(csv.text) );
 		string[,] array = CSVReader.SplitCsvGrid(contents);

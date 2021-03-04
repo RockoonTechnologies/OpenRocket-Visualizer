@@ -16,6 +16,7 @@ public class menuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         try {
             path.text = PlayerPrefs.GetString("path");
             longi.text = PlayerPrefs.GetFloat("long").ToString();
