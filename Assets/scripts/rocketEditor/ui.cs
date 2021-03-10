@@ -31,4 +31,12 @@ public class ui : MonoBehaviour
 
         placeholder.color = color;
     }
+
+    public Color32 getColor() {
+        return new Color32((byte) (byte) R.value, (byte) G.value, (byte) B.value, (byte) 255);
+    }
+
+    public float getScale() {
+        return float.Parse(scale.text);
+    }
 }

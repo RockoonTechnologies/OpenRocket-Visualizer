@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class properties : MonoBehaviour
 {
     public float Version = 0.1f;
@@ -10,5 +11,5 @@ public class properties : MonoBehaviour
     public Vector3 offset;
     public float scale;
 
-    public Color color;
+    public Color32 color;
 }
