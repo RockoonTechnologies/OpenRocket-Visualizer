@@ -33,15 +33,14 @@ public class csvRunner : MonoBehaviour {
 	string contents;
 
 
-	public Mapbox.Unity.Map.AbstractMap map;
+	public AbstractMap map;
 
-	void Awake() {
-		map = GameObject.Find("Map").GetComponent<Mapbox.Unity.Map.AbstractMap>();
-		map._initializeOnStart = true;
-	}
+	
 
 	void Start () {
 		
+		//map = GameObject.Find("Map").GetComponent<Mapbox.Unity.Map.AbstractMap>();
+		//print(map);
 		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Awake();
 		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Reload(1);
 		gameObject.GetComponent<rocketSpawner>().LOAD();
@@ -57,15 +56,13 @@ public class csvRunner : MonoBehaviour {
 		}
 
 
-		float lat = PlayerPrefs.GetFloat("lat");
-		float longi = PlayerPrefs.GetFloat("long"); 
-
+		//float lat = PlayerPrefs.GetFloat("lat");
+		//float longi = PlayerPrefs.GetFloat("long"); 
 		
-		Vector2d coords = new Vector2d(lat, longi);
-		print("lat: " + lat.ToString());
-		print("longi: " + longi.ToString());
+		//Vector2d coords = new Vector2d(lat, longi);
 		
-		map.UpdateMap(coords, 15f);
+		//print(coords);
+		//map.UpdateMap(coords, 15f);
 
 		//CSVReader.DebugOutputGrid( CSVReader.SplitCsvGrid(csv.text) );
 		string[,] array = CSVReader.SplitCsvGrid(contents);

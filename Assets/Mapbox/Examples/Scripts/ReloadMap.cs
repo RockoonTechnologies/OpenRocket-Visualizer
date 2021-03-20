@@ -25,9 +25,8 @@
 
 		WaitForSeconds _wait;
 
-		public void Awake()
+		void Awake()
 		{
-			DontDestroyOnLoad(this.gameObject);
 			_camera = Camera.main;
 			_cameraStartPos = _camera.transform.position;
 			_map = FindObjectOfType<AbstractMap>();
@@ -62,7 +61,6 @@
 			{
 				int zoom = _map.AbsoluteZoom;
 				_map.UpdateMap(response.Features[0].Center, zoom);
-				
 			}
 		}
 
@@ -79,7 +77,7 @@
 			ForwardGeocoder_OnGeocoderResponse(response);
 		}
 
-		public void Reload(float value)
+		void Reload(float value)
 		{
 			if (_reloadRoutine != null)
 			{

@@ -24,6 +24,7 @@ ScriptsOnlyBuild:
     - ScriptablePalette
     - cameraManager
     - csvRunner
+    - demoMap
     - loader
     - lookCam
     - mapScaler
@@ -101,39 +102,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11794}
-    - Class: 114
       Script: {instanceID: 11798}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11802}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 12530}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12748}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 13200}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 13572}
     - Class: 114
-      Script: {instanceID: 14192}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 14232}
+      Script: {instanceID: 14206}
     - Class: 114
-      Script: {instanceID: 14284}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14538}
+      Script: {instanceID: 14298}
     - Class: 114
-      Script: {instanceID: 14778}
+      Script: {instanceID: 14552}
     - Class: 114
-      Script: {instanceID: 14830}
+      Script: {instanceID: 14794}
+    - Class: 114
+      Script: {instanceID: 14846}
+    - Class: 114
+      Script: {instanceID: 18214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -178,21 +181,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11800}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 12108}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12748}
+      Script: {instanceID: 12756}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 14232}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14830}
+      Script: {instanceID: 14846}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -253,77 +256,77 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11796}
-    - Class: 114
-      Script: {instanceID: 11798}
-    - Class: 114
       Script: {instanceID: 11800}
     - Class: 114
       Script: {instanceID: 11802}
     - Class: 114
-      Script: {instanceID: 11832}
+      Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11806}
     - Class: 114
-      Script: {instanceID: 12170}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 12138}
     - Class: 114
-      Script: {instanceID: 12274}
+      Script: {instanceID: 12178}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12362}
+      Script: {instanceID: 12282}
     - Class: 114
-      Script: {instanceID: 12502}
+      Script: {instanceID: 12332}
     - Class: 114
-      Script: {instanceID: 12624}
+      Script: {instanceID: 12370}
     - Class: 114
-      Script: {instanceID: 12638}
+      Script: {instanceID: 12510}
     - Class: 114
-      Script: {instanceID: 12784}
+      Script: {instanceID: 12632}
     - Class: 114
-      Script: {instanceID: 12788}
+      Script: {instanceID: 12646}
     - Class: 114
-      Script: {instanceID: 12854}
+      Script: {instanceID: 12792}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 13048}
+      Script: {instanceID: 12862}
     - Class: 114
-      Script: {instanceID: 13120}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13208}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 13216}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13266}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13406}
     - Class: 114
-      Script: {instanceID: 13948}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 14232}
+      Script: {instanceID: 13936}
     - Class: 114
-      Script: {instanceID: 14238}
+      Script: {instanceID: 13960}
     - Class: 114
-      Script: {instanceID: 14296}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14320}
+      Script: {instanceID: 14252}
     - Class: 114
-      Script: {instanceID: 14440}
+      Script: {instanceID: 14310}
     - Class: 114
-      Script: {instanceID: 14806}
+      Script: {instanceID: 14334}
     - Class: 114
-      Script: {instanceID: 14830}
+      Script: {instanceID: 14454}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 14822}
     - Class: 114
-      Script: {instanceID: 14960}
+      Script: {instanceID: 14846}
     - Class: 114
-      Script: {instanceID: 18880}
+      Script: {instanceID: 14870}
+    - Class: 114
+      Script: {instanceID: 14976}
+    - Class: 114
+      Script: {instanceID: 30318}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -445,6 +448,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Map.TileProviders
     className: RangeAroundTransformTileProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 0f5b30613ff41857908f2a15366c58ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: modelLoader
   - hash:
       serializedVersion: 2
       Hash: 3975e85b83b7f5d56eb5f88a9ee5aae9
@@ -1077,6 +1086,12 @@ ScriptsOnlyBuild:
     className: MeshGenerationBase
   - hash:
       serializedVersion: 2
+      Hash: 25cc13bdcf0d4552680233735ce8574e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: properties
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1111,6 +1126,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Location
     className: AngleSmoothingNoOp
+  - hash:
+      serializedVersion: 2
+      Hash: 270da4adc19a657acb5770945f092e6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ui
   - hash:
       serializedVersion: 2
       Hash: 908b3077da284d11de0450423ca1808e
@@ -1177,6 +1198,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: ReplaceFeatureCollectionModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 7805dbebd103341782f3d6071ec8690f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: main
   - hash:
       serializedVersion: 2
       Hash: 2e4fb5a903777f5e4ac9cd3451a19a73
@@ -1479,6 +1506,12 @@ ScriptsOnlyBuild:
     className: TransformLocationProvider
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: draggy
+  - hash:
+      serializedVersion: 2
       Hash: 134322c9293c1896357cce271b819ce4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1573,6 +1606,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: ModifierStack
+  - hash:
+      serializedVersion: 2
+      Hash: 1cfd441f1623a787814f07d83535e0a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: demoMap
   platform: 5
   scenePathNames:
   - Assets/Scenes/menu.unity

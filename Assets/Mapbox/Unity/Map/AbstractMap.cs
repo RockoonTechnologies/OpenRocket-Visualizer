@@ -28,7 +28,7 @@ namespace Mapbox.Unity.Map
 		#region Private Fields
 
 		[SerializeField] private MapOptions _options = new MapOptions();
-		[SerializeField] public bool _initializeOnStart = true;
+		[SerializeField] private bool _initializeOnStart = true;
 		[SerializeField] protected ImageryLayer _imagery = new ImageryLayer();
 		[SerializeField] protected TerrainLayer _terrain = new TerrainLayer();
 		[SerializeField] protected VectorLayer _vectorData = new VectorLayer();
