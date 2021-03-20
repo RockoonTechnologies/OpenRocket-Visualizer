@@ -4,7 +4,7 @@
  **THIS IS A WORK IN PROGRESS**
 
  ![gif](https://i.imgur.com/wQ91TuP.gif)
- ![pic](https://imgur.com/zVuHzCG)
+ ![pic](https://i.imgur.com/zVuHzCG.png)
 
 
 View your OpenRocket Simulations in 3D.
