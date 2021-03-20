@@ -13,7 +13,7 @@ View your OpenRocket Simulations in 3D.
 - the Rocket Model
 - The Timescale
 - Position in-flight
-- The Setting (being worked on), the time of day, location, etc
+- The Setting the time of day, location, etc
 
 
 ## Installation
@@ -38,7 +38,7 @@ First of all click on one of your Sims, it will bring up this window:
 
 Click on the "Simulate & Plot" Button. This will bring up another window:
 
-![Window]https://i.imgur.com/zVuHzCG.png)
+![Window](https://i.imgur.com/zVuHzCG.png)
 
 Click on the "Export data" Tab.
 
