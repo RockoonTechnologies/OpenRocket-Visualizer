@@ -4,6 +4,7 @@
  **THIS IS A WORK IN PROGRESS**
 
  ![gif](https://i.imgur.com/wQ91TuP.gif)
+ ![pic](https://imgur.com/zVuHzCG)
 
 
 View your OpenRocket Simulations in 3D.
@@ -37,7 +38,7 @@ First of all click on one of your Sims, it will bring up this window:
 
 Click on the "Simulate & Plot" Button. This will bring up another window:
 
-![Window](https://i.imgur.com/ug2xn2d.png)
+![Window]https://i.imgur.com/zVuHzCG.png)
 
 Click on the "Export data" Tab.
 
@@ -60,9 +61,12 @@ Choose anywhere to place the file, just remember its path.
 
 Now you can open the Visulizer, and you will be presented with the menu.
 
-![eee](https://i.imgur.com/CZJNicg.png)
+![eee](https://i.imgur.com/gV27PBW.png)
 
 Here you can choose settings and get a preview of the model you choose.
+
+You can begin by setting the coordinates of your "scene", this is how you set the destination of where-ever you want to simulate your rocket. 
+You can also change some other things, changing the time of day, and the model of your rocket.
 
 More importantly though, there is a input field for the path of your simulation. Enter the path of your simulation export.
 
