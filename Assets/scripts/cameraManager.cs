@@ -7,6 +7,10 @@ public class cameraManager : MonoBehaviour
     orbit orb;
     lookCam look;
     Vector3 lookie;
+
+    public TrailRenderer tr;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,6 @@ public class cameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        tr.widthMultiplier = Vector3.Distance(tr.transform.position, look.transform.position) * .2f;
     }
 }

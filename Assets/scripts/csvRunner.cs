@@ -11,12 +11,14 @@ public class csvRunner : MonoBehaviour {
  
 	
 	public Transform rocket;
+	public TrailRenderer tr;
 	//public ParticleSystem flameys;
 	public Transform light;
 	Rigidbody rb;
 
 	public GameObject loading;
 	
+	public Transform LandingSite;
 
 
 	public bool paused;
@@ -34,18 +36,20 @@ public class csvRunner : MonoBehaviour {
 
 
 	public AbstractMap map;
-
+	public float mapScale = 20f;
 	
 
 	void Start () {
 		
-		//map = GameObject.Find("Map").GetComponent<Mapbox.Unity.Map.AbstractMap>();
-		//print(map);
-		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Awake();
-		//GameObject.Find("ReloadMapCanvas").GetComponent<Mapbox.Examples.ReloadMap>().Reload(1);
-		gameObject.GetComponent<rocketSpawner>().LOAD();
+		float lat = PlayerPrefs.GetFloat("lat");
+		float longi = PlayerPrefs.GetFloat("long"); 
 
 		
+		Vector2d coords = new Vector2d(lat, longi);
+		map.UpdateMap(coords, 15f);
+		map.transform.localScale = new Vector3(mapScale, 1, mapScale);
+
+		gameObject.GetComponent<rocketSpawner>().LOAD();
 
 		dt = PlayerPrefs.GetFloat("dt");
 		string path = PlayerPrefs.GetString("path");
@@ -56,15 +60,6 @@ public class csvRunner : MonoBehaviour {
 		}
 
 
-		//float lat = PlayerPrefs.GetFloat("lat");
-		//float longi = PlayerPrefs.GetFloat("long"); 
-		
-		//Vector2d coords = new Vector2d(lat, longi);
-		
-		//print(coords);
-		//map.UpdateMap(coords, 15f);
-
-		//CSVReader.DebugOutputGrid( CSVReader.SplitCsvGrid(csv.text) );
 		string[,] array = CSVReader.SplitCsvGrid(contents);
 		ori = GetComponent<orientation>();
 		ori.dt = dt;
@@ -116,14 +111,16 @@ public class csvRunner : MonoBehaviour {
 	private IEnumerator Run(string[,] data, int start)
     {
 	   rb.isKinematic = true;
-	   timeline.maxValue = data.GetLength(1)-5;
+	   int max = data.GetLength(1)-5;
+	   timeline.maxValue = (float) max;
+	   LandingSite.position = new Vector3(float.Parse(data[2, max]), float.Parse(data[1, max]) + 100f, float.Parse(data[3, max]));
 	   float oldHeight = 0;
 	   //flameys.Play();
        for(int x = start; x < data.GetLength(1)-5; x++) {
 		   loading.SetActive(false);
 		   while(paused) {
 			   yield return null;
-			  
+			   tr.Clear();
 		   }
 			
 		   float time = float.Parse(data[0, x]);

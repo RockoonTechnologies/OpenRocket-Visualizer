@@ -24,14 +24,13 @@ ScriptsOnlyBuild:
     - ScriptablePalette
     - cameraManager
     - csvRunner
-    - demoMap
-    - loader
     - lookCam
     - mapScaler
     - menuManager
     - orbit
     - orientation
     - rocketSpawner
+    - sceneLoader
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -114,29 +113,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 12756}
+      Script: {instanceID: 12758}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 13200}
+      Script: {instanceID: 13202}
     - Class: 114
-      Script: {instanceID: 13572}
+      Script: {instanceID: 13574}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 14206}
+      Script: {instanceID: 14208}
     - Class: 114
-      Script: {instanceID: 14246}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 14298}
+      Script: {instanceID: 14300}
     - Class: 114
-      Script: {instanceID: 14552}
+      Script: {instanceID: 14554}
     - Class: 114
-      Script: {instanceID: 14794}
+      Script: {instanceID: 14796}
     - Class: 114
-      Script: {instanceID: 14846}
-    - Class: 114
-      Script: {instanceID: 18214}
+      Script: {instanceID: 14848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 121
@@ -189,13 +186,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12194}
     - Class: 114
-      Script: {instanceID: 12756}
+      Script: {instanceID: 12758}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 14246}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 14846}
+      Script: {instanceID: 14848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -284,49 +281,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12646}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12794}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 12862}
+      Script: {instanceID: 12864}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 13056}
+      Script: {instanceID: 13058}
     - Class: 114
-      Script: {instanceID: 13128}
+      Script: {instanceID: 13130}
     - Class: 114
-      Script: {instanceID: 13216}
+      Script: {instanceID: 13218}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 13268}
     - Class: 114
-      Script: {instanceID: 13406}
+      Script: {instanceID: 13408}
     - Class: 114
-      Script: {instanceID: 13662}
+      Script: {instanceID: 13664}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 13960}
+      Script: {instanceID: 13962}
     - Class: 114
-      Script: {instanceID: 14246}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 14254}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 14312}
     - Class: 114
-      Script: {instanceID: 14334}
+      Script: {instanceID: 14336}
     - Class: 114
-      Script: {instanceID: 14454}
+      Script: {instanceID: 14456}
     - Class: 114
-      Script: {instanceID: 14822}
+      Script: {instanceID: 14824}
     - Class: 114
-      Script: {instanceID: 14846}
+      Script: {instanceID: 14848}
     - Class: 114
-      Script: {instanceID: 14870}
+      Script: {instanceID: 14872}
     - Class: 114
-      Script: {instanceID: 14976}
+      Script: {instanceID: 14978}
     - Class: 114
-      Script: {instanceID: 30318}
+      Script: {instanceID: 28438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -513,7 +510,7 @@ ScriptsOnlyBuild:
       Hash: f32f437684ebb6383d2f46351878d257
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: loader
+    className: sceneLoader
   - hash:
       serializedVersion: 2
       Hash: fd8b23ad3c9e81bc85b197495bc510ac
@@ -1068,7 +1065,7 @@ ScriptsOnlyBuild:
     className: lookCam
   - hash:
       serializedVersion: 2
-      Hash: ce0bb99136c7963ca0b7cfd56d4a793c
+      Hash: 0b93a0d08102b448cbfc124865f83e0c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: csvRunner
@@ -1308,7 +1305,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 277f575de6e3ad2b6578236d8466206d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: cameraManager
@@ -1606,15 +1603,9 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: ModifierStack
-  - hash:
-      serializedVersion: 2
-      Hash: 1cfd441f1623a787814f07d83535e0a0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: demoMap
   platform: 5
   scenePathNames:
   - Assets/Scenes/menu.unity
   - Assets/Scenes/loadMain.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/icat7/Pictures/dump/OR viz.exe
+  playerPath: C:/Users/icat7/Pictures/buildDUmp/OR viz.exe

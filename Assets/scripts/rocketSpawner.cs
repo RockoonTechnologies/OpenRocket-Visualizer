@@ -19,6 +19,9 @@ public class rocketSpawner : MonoBehaviour
         GameObject spawned = Instantiate(model, new Vector3(0, 0, 0), Quaternion.identity);
         gameObject.GetComponent<csvRunner>().rocket = spawned.transform;
         Camera.main.gameObject.GetComponent<orbit>().target = spawned.transform;
+        Camera.main.gameObject.GetComponent<cameraManager>().tr = spawned.transform.GetChild(2).gameObject.GetComponent<TrailRenderer>();
+        gameObject.GetComponent<csvRunner>().tr = spawned.transform.GetChild(2).gameObject.GetComponent<TrailRenderer>();
+        Camera.main.gameObject.GetComponent<lookCam>().target = spawned.transform;
     }
 
     // Update is called once per frame

@@ -20,10 +20,10 @@ public class orientation : MonoBehaviour
     {
         Vector3 BodyRates = new Vector3(xRate, yRate, zRate);
 
-        float cos_Roll = Mathf.Cos((angle.x/100f)*PI);
-	    float sin_Roll = Mathf.Sin((angle.x/100f)*PI);
-	    float cos_Pitch = Mathf.Cos((angle.y/100f)*PI);
-	    float tan_Pitch = Mathf.Tan((angle.y/100f)*PI);
+        float cos_Roll = Mathf.Cos((angle.x/180f)*PI);
+	    float sin_Roll = Mathf.Sin((angle.x/180f)*PI);
+	    float cos_Pitch = Mathf.Cos((angle.y/180f)*PI);
+	    float tan_Pitch = Mathf.Tan((angle.y/180f)*PI);
 
         float roll_Dot = BodyRates.x + BodyRates.y * sin_Roll * tan_Pitch + BodyRates.z * cos_Roll * tan_Pitch;
 	    float pitch_Dot = BodyRates.y * cos_Roll - BodyRates.z * sin_Roll;
