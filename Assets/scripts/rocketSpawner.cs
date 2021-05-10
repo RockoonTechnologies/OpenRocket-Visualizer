@@ -6,6 +6,7 @@ public class rocketSpawner : MonoBehaviour
 {
     public GameObject shuttle;
     public GameObject dRocket;
+    public GameObject flames;
     // Start is called before the first frame update
     public void LOAD()
     {
@@ -17,6 +18,10 @@ public class rocketSpawner : MonoBehaviour
             model = shuttle;
 
         GameObject spawned = Instantiate(model, new Vector3(0, 0, 0), Quaternion.identity);
+
+       // GameObject flam = Instantiate(flames, new Vector3(0, 0, 0), Quaternion.identity);
+       // flam.transform.parent = spawned.transform;
+
         gameObject.GetComponent<csvRunner>().rocket = spawned.transform;
         Camera.main.gameObject.GetComponent<orbit>().target = spawned.transform;
         Camera.main.gameObject.GetComponent<cameraManager>().tr = spawned.transform.GetChild(2).gameObject.GetComponent<TrailRenderer>();

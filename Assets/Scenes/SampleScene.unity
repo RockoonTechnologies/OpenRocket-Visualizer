@@ -3833,6 +3833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shuttle: {fileID: 333880466212635333, guid: 2aecfe671c6c42c46bba32933f69eaf1, type: 3}
   dRocket: {fileID: 4580795268467626480, guid: b54e8204acd1da1479aca46b073404e2, type: 3}
+  flames: {fileID: 8710944161436447582, guid: 617306ea5b128af42b136247c38d0c38, type: 3}
 --- !u!1 &2074320140
 GameObject:
   m_ObjectHideFlags: 0
